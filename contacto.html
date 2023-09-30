@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Inicio</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <script type="text/javascript">
+        document.oncontextmenu= function(){
+            return false;
+        }
+    </script>
+  <div class="navbar">
+    <div class="logo">
+      <img src="Imagenes/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="contacto.css"> <!-- Enlaza tus estilos CSS aquí -->
+</head>
+<body>
+    <h1>Contacto</h1>
+    <div class="content">
+    <form action="procesar_formulario.php" method="post">
+    
+        <div>
+        <label for="nombre">Nombre:</label>
+        </div>
+
+        <div>
+        <input type="text" id="nombre" name="nombre" required>
+       </div>
+
+       <div>
+        <label for="email">Correo Electrónico:</label>
+    </div>
+
+    <div>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+        <label for="mensaje">Mensaje:</label>
+    </div>
+    <div>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+  </div class="content">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        /* Estilos para el contenedor del mapa */
+    </style>
+</head>
+<body> 
+    <div id="text-container"></div>
+    <title>mapa</title>
+    <p2>Encuéntranos en el mapa:</p>
+    <!-- Contenedor del mapa -->
+    <div id="map-container">
+        <!-- Inserta aquí el código de incrustación del mapa -->
+        <iframe
+            width="50%"
+            height="200"
+            frameborder="0"
+            
+            style="border: 0"
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4952.919822320627!2d-77.01254493385709!3d-11.91411132354174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105da827f2a6b8d%3A0x345375880c2c2706!2sParadero%2018%20mototaxis!5e0!3m2!1ses!2spe!4v1695299017513!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Todo esta bien. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>

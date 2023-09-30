@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Inicio</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <script type="text/javascript">
+        document.oncontextmenu= function(){
+            return false;
+        }
+    </script>
+  <div class="navbar">
+    <div class="logo">
+      <img src="Imagenes/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!DOCTYPE html>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedidos</title>
+    <link rel="stylesheet" href="pedidos (1).css">
+</head>
+<body>
+    <h1>Formulario de Pedidos</h1>
+
+    <form action="procesar_pedido.php" method="POST">
+        <!-- Sección Tipo de Medio de Pago -->
+        <h2>Tipo de Medio de Pago</h2>
+        <label for="tarjeta">Tarjeta de Crédito</label>
+        <input type="radio" id="tarjeta" name="medio_pago" value="tarjeta">
+
+        <label for="efectivo">Efectivo</label>
+        <input type="radio" id="efectivo" name="medio_pago" value="efectivo">
+
+        <label for="efectivo">Yape</label>
+        <input type="radio" id="yape" name="medio_pago" value="yape">
+
+        <!-- Sección Nombre de Productos -->
+        <h2>Productos</h2>
+        <div class="product">
+            <label for="producto1">Nombre</label>
+            <input type="text" id="producto1" name="producto1">
+        </div>
+
+        <!-- Sección Cantidades -->
+        <h2>Cantidades</h2>
+        <div class="quantity">
+            <input type="number" id="cantidad1" name="cantidad1" min="0">
+        </div>
+        <!-- Botón de Enviar -->
+        <input type="submit" value="Enviar Pedido">
+    </form>
+    <footer class="footer">
+        <p>&copy; 2023 Todo esta bien. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>
